@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="sr-Latn-RS">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HMS Belfast - Početna</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="shortcut icon" href="fajlovi/shortcut.png">
+<meta name="description" content="HMS Belfast. Ponos Kraljevske mornarice.">
+<meta name="keywords" content="HMS Belfast, muzej, kraljevska mornarica, London, brod, istorija">
+</head>
+<body>
+<!-------------------------------------------------  HEADER POCETAK  -------------------------------------------------->
+<header id="header">
+<div id="logo">
+<a href="index.html">
+<img src="fajlovi/logo.png" alt="logo">
+</a>
+</div>
+<nav id="hmeni">
+<ul>
+<li>
+<a class="active" href="index.html">POČETNA</a>
+</li>
+ <li>
+<a href="galerija.html">GALERIJA</a>
+</li>
+<li>
+<a href="kontakt.html">KONTAKT</a>
+</li>
+<li>
+<a href="autor.html">O AUTORU</a>
+</li>
+</ul>
+</nav>
+</header> 
+<!-------------------------------------------------SADRZAJ POCETNA--------------------------------------------------->
+<main>
+<div class="bg" id="pocetna"><br><br><br><br><br><br><br><br><h1>HMS Belfast</h1>
+<h2>Pro Tanto Quid Retribuamus</h2>
+</div>
+<div class="okvir">
+<div id="content">
+<section class="tekst">
+<article>
+<h2>Ponos kraljevske mornarice</h2>
+<br>
+<h3>
+Krstarica Belfast (HMS Belfast) je ponos britanske flote, trajno usidrena na Temzi u samom centru Londona. 
+Nekada je učestvovala u  bitkama i dokazala se tokom Drugog svetskog rata, 
+a sada je to pomorski muzej, popularan među turistima i stanovnicima Velike Britanije.
+</h3> 
+<br>
+<h3> 
+Izgrađena je 1936. godine u Irskoj, a ime je dobila po glavnom gradu - Belfastu. 31. avgusta 1939. godine brod  je ušao u sastav 18. krstareće eskadrile. 
+Posle 4 meseca službe pogodila ju je nemačka mina i bila je na popravci do 1942.
+</h3>
+<br> 
+<h3> 
+U decembru 1943. godine, krstarica Belfast postala je poznata po uništenju njemačkog bojnog broda Scharnhost. U junu 1944. učestvovala je u operaciji Overlord, podržavajući iskrcavanje u Normandiji
+ Kraj rata je dočekala patrolirajući vodama na Dalekom istoku i obezbeđujući savezničke konvoje.Učestvovala je u Korejskom ratu 1950-1953, ali je teško oštećena tokom artiljerijskog napada.
+</h3>
+<h3>
+Ratni brod je ostao u službi mornarice Velike Britanije do 1965. godine, iako se od 1950. nije koristio u ratne svrhe.
+1971. godine postala je plutajući muzej. 
+ </h3>
+ <h3>
+ Kao popularna turistička atrakcija u Londonu, krstarica ima više od 250000 posetilaca godišnje.
+ </h3>
+</article>
+</section>
+</div>
+</div>
+</main>
+<br><br><br><br><br><br><br><br>
+<div class="slideshow-container">
+<div class="slides">
+     <img src="fajlovi/360starboard.jpg" alt="Image 1" class="slide-image">
+     <img src="fajlovi/360nose.jpg" alt="Image 2" class="slide-image">
+     <img src="fajlovi/360top.jpg" alt="Image 3" class="slide-image">
+     <img src="fajlovi/360aft.jpg" alt="Image 4" class="slide-image">
+</div>
+<button class="slideshow-btn prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+<button class="slideshow-btn next-btn" onclick="changeSlide(1)">&#10095;</button>
+</div>
+<script>
+        let currentSlide = 0;
+        const slides = document.querySelector('.slides');
+        const slideImages = document.querySelectorAll('.slide-image');
+        const totalSlides = slideImages.length;
+
+
+        let autoSlideInterval = setInterval(() => changeSlide(1), 3000);
+
+        function changeSlide(direction) {
+
+            clearInterval(autoSlideInterval);
+            autoSlideInterval = setInterval(() => changeSlide(1), 3000);
+            currentSlide += direction;
+            if (currentSlide < 0) currentSlide = totalSlides - 1;
+            if (currentSlide >= totalSlides) currentSlide = 0;
+            slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+ </script>
+<br><br>
+<!-------------------------------------------------- FOOTER POCETAK  -------------------------------------------------->
+<footer class="footer">
+<div class="container">
+ <div class="row">
+ <div class="footer-col">
+ <h4>Navigacija</h4>
+ <ul>
+ <li><a href="index.html">Početna</a></li>
+<li><a href="galerija.html">Galerija</a></li>
+<li><a href="kontakt.html">Kontakt</a></li>
+<li><a href="autor.html">O autoru</a></li>
+ </ul>
+</div>
+<div class="footer-col">
+ <h4>Društvene mreže</h4>
+<ul>
+<li><a href="https://Facebook.com/">Facebook</a></li>
+<li><a href="https://Instagram.com/">Instagram</a></li>
+<li><a href="https://twitter.com/">Twitter</a></li>
+</ul>
+</div>
+ <div class="footer-col">
+ <h4>Privatna polisa</h4>
+ <ul>
+ <li><a href="https://www.copyright.gov/help/faq/faq-general.html">@copyright 1936-2023</a></li>
+ </ul>
+</div>
+<div class="footer-col">
+<h4>Korisni Linkovi</h4>
+<ul>
+<div class="social-links">
+<li class="social-icon__item"><a class="social-icon__link" href="fajlovi/rss.xml   ">
+ <iconify-icon icon="bi:rss-fill"></iconify-icon>
+ </a></li>
+<li class="social-icon__item"><a class="social-icon__link" href="fajlovi/sitemap.xml">
+ <iconify-icon icon="mdi:sitemap-outline"></iconify-icon>
+ </a></li>
+<li class="social-icon__item"><a class="social-icon__link" href="robots.txt">
+ <iconify-icon icon="mdi:web-box"></iconify-icon>
+ </a></li>
+</ul>
+ </div>
+</div>
+</div>
+</div>
+ </footer>
+ </body>
+ </html>
